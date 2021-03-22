@@ -1,5 +1,6 @@
 ---
 title: A Better Reproducible Poster Title
+subtitle: Cool poster subtitle.
 author:
   - name: Brent Thorne
     affil: 1
