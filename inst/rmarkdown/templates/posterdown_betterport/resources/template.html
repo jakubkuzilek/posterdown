@@ -183,6 +183,14 @@ border-bottom: 0;
 font-weight: normal;
 background: 0;
 }
+#subtitle {
+font-size: $if(subtitle_textsize)$$subtitle_textsize$$else$80pt$endif$;
+color: #00000060;
+text-align: left;
+margin: 0;
+line-height: 90%;
+border-bottom: 0;
+}
 #author {
 color:$if(author_textcol)$$author_textcol$$else$$if(primary_colour)$$primary_colour$$else$#0b4545$endif$$endif$;
 margin: 0;
@@ -398,6 +406,7 @@ $endfor$
 <div class="column outer">
 <div class="section">
 $if(title)$<h1 id="title">$title$</h1><br>$else$$endif$
+$if(subtitle)$<h2 id="subtitle">$subtitle$</h2><br>$else$$endif$
 $if(author)$<h3 id="author" class="author">
 
 $for(author)$
